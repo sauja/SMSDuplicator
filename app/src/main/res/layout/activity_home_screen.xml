@@ -3,7 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-   android:orientation="vertical"
+    android:orientation="vertical"
+    android:padding="16dp"
     tools:context="otp.com.thehrmsinc.smsduplicator.HomeScreen">
 
     <EditText
@@ -11,24 +12,48 @@
         android:layout_height="wrap_content"
         android:inputType="textEmailAddress"
         android:ems="10"
-        android:id="@+id/email_TextView"
-        android:hint="Enter email" />
+        android:id="@+id/senderEmail_TextView"
+        android:hint="@string/SenderEmailHint" />
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="textPassword"
+
+        android:id="@+id/senderPassword_editText"
+        android:hint="@string/SenderPasswordHint" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
         android:ems="10"
-        android:id="@+id/password_editText"
-        android:layout_gravity="right"
-        android:hint="Enter password" />
+        android:id="@+id/receiverEmail_editText"
+        android:layout_gravity="center_horizontal"
+        android:hint="@string/ReceiversEmailHint" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Save"
+        android:id="@+id/save_btn"
+        android:layout_gravity="end"
+        android:clickable="true"
+        style="@style/AppTheme" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/info_textView"
+        android:layout_weight="1"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="@string/about"
-        android:id="@+id/textView"
+        android:id="@+id/about_textView"
+        android:layout_gravity="end"
          />
 
 </LinearLayout>

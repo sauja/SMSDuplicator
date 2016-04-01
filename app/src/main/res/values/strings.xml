@@ -5,4 +5,10 @@
     <string name="Start">Start</string>
     <string name="End">End</string>
     <string name="about">- Developed by Saurabh</string>
+    <string name="Save">Save</string>
+    <string name="ReceiversEmailHint">Enter Receiver Email</string>
+    <string name="SenderPasswordHint">Enter senders password</string>
+    <string name="SenderEmailHint">Enter senders email</string>
+    <string name="About">Enter senders email</string>
+
 </resources>
